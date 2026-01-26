@@ -5,6 +5,7 @@
   "spacing": 4,
   "modules-left": [
     "niri/workspaces",
+    "mpris"
   ],
   "modules-center": [
     "niri/window"
@@ -87,7 +88,21 @@
       "car": "",
       "default": ["", ""]
     },
-    "scroll-step": 1,
+    "scroll-step": 2,
     "on-click": "pavucontrol"
+  },
+  "mpris": {
+    "format": "{player_icon} {dynamic}",
+    "format-paused": "{status_icon} <i>{dynamic}</i>",
+    "player-icons": {
+      "default": "▶",
+      "mpv": "🎵"
+    },
+    "status-icons": {
+      "paused": "⏸"
+    },
+    // "ignored-players": ["firefox"]
+    "interval": 1,
+    "album-len": 0
   }
 }

@@ -32,7 +32,7 @@ window#waybar {
 #taskbar button.active {
     background-image: linear-gradient(0deg, @selection, @background-darker);
 }
-#tray, #power-profiles-daemon, #custom-weather, #pulseaudio, #battery, #clock {
+#tray, #power-profiles-daemon, #custom-weather, #pulseaudio, #battery, #clock, #mpris {
     padding-left: 10px;
 }
 #clock {
