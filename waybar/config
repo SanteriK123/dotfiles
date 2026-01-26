@@ -103,6 +103,16 @@
     },
     // "ignored-players": ["firefox"]
     "interval": 1,
-    "album-len": 0
+    "album-len": 0,
+    "artist-len": 30,
+    "title-len": 30
+  },
+  "niri/window": {
+    "format": "{}",
+    "rewrite": {
+        "(.*) — Mozilla Firefox": "󰈹 Firefox: {1}",
+        "(.*) - Discord": " Discord: {1}",
+        "(.*) — Mozilla Firefox": "󰈹 Firefox" 
+    }
   }
 }
