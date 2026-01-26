@@ -57,13 +57,14 @@
       "on-discharging-critical": "notify-send -u critical 'Very Low Battery'",
       "on-charging-100": "notify-send -u normal 'Battery Full!'"
     },
-    "format": "{capacity}% {icon}",
+    "format": "{time} {capacity}% {icon}",
     "format-icons": ["", "", "", "", ""],
+    "format-time": "{H}h{M}m left at",
     "max-length": 25
   },
   "power-profiles-daemon": {
     "format": "{icon}",
-    "tooltip-format": "Power profile: {profile}nDriver: {driver}",
+    "tooltip-format": "Power profile: {profile} nDriver: {driver}",
     "tooltip": true,
     "format-icons": {
       "default": " ",
