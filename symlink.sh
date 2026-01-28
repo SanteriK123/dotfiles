@@ -1,6 +1,8 @@
 #!/bin/bash
 
-DOT_DIR="$HOME/Documents/Github/dotfiles"
+# Get the directory where this script is located
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 TARGET_DIR="$HOME/.config"
 
 # List of config directories
@@ -9,13 +11,13 @@ CONFIGS="fuzzel kitty mako niri nvim waybar"
 mkdir -p "$TARGET_DIR"
 
 for folder in $CONFIGS; do
-    SOURCE="$DOT_DIR/$folder"
+    SOURCE="$SCRIPT_DIR/$folder"
     DEST="$TARGET_DIR/$folder"
 
     echo "Checking $folder..."
 
     if [ ! -d "$SOURCE" ]; then
-        echo "Skipping: $folder not found in your repo."
+        echo "Skipping: $folder not found in $SCRIPT_DIR"
         continue
     fi
 
@@ -33,5 +35,4 @@ for folder in $CONFIGS; do
     fi
 done
 
-echo "Your .config is now linked to your repo."
-
+echo "Your .config is now linked to your repo at $SCRIPT_DIR."
