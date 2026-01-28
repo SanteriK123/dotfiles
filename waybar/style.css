@@ -35,6 +35,12 @@ window#waybar {
 #tray, #power-profiles-daemon, #custom-weather, #pulseaudio, #battery, #clock, #mpris {
     padding-left: 10px;
 }
+#power-profiles-daemon {
+    color: @orange;
+}
+#battery {
+    color: @green;
+}
 #clock {
     padding-right: 10px;
 }
