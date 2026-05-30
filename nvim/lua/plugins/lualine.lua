@@ -4,7 +4,7 @@ return {
   config = function()
   require("lualine").setup({
   options = {
-    theme = "adwaita",
+    theme = "auto",
   },
   sections = {
     lualine_c = {

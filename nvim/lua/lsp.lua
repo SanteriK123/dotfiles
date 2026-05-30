@@ -45,11 +45,13 @@ vim.lsp.enable("pyright")
 vim.lsp.config("elixirls", {
   cmd = { "elixir-ls" },
 })
+
 vim.lsp.enable("elixirls")
 
 vim.lsp.config("clangd", {
   cmd = { "clangd", "--completion-style=detailed" },
 })
+
 vim.lsp.enable("clangd")
 
 vim.lsp.enable("ts_ls")
@@ -59,6 +61,7 @@ vim.lsp.enable("html")
 --vim.lsp.config("omnisharp", {
 --  cmd = { "omnisharp" },
 --})
+
 vim.lsp.enable("omnisharp")
 
 vim.lsp.config("tinymist", {
