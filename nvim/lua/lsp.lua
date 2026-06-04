@@ -50,6 +50,7 @@ vim.lsp.enable("elixirls")
 
 vim.lsp.config("clangd", {
   cmd = { "clangd", "--completion-style=detailed" },
+  capabilities = capabilities
 })
 
 vim.lsp.enable("clangd")
