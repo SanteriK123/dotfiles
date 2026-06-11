@@ -1,0 +1,15 @@
+# Visual stuff
+theme = Adwaita Dark
+font-size = 13
+window-padding-x = 10
+window-padding-y = 10
+
+# Keybinds
+keybind =  ctrl+h=goto_split:left
+keybind = ctrl+l=goto_split:right
+keybind = ctrl+j=goto_split:down
+keybind = ctrl+k=goto_split:up
+keybind = ctrl+f=start_search
+
+# Idk
+shell-integration-features = sudo
